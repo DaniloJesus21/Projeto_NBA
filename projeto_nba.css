@@ -1,0 +1,462 @@
+
+/*Estilização geral*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+section {
+  height: 100vh;
+}
+h1 {
+  font-family: 'Kanit', sans-serif;
+}
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  color: rgb(255, 253, 254);
+  text-decoration: underline;
+}
+
+/*Estilizando o Header*/
+
+header {
+  background-color: rgb(255, 253, 254);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 5px;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container img {
+  height: 50px;
+  margin-left: 50px;
+}
+header nav li{
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-left: 16px;
+  font-size: 18px;
+  list-style: none;
+}
+header li a {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  align-self: center;
+  font-size: 18px;
+  font-weight:900;
+  color: rgb(9, 66, 156);
+}
+header li a:hover {
+  color:rgb(212, 0, 38);
+}
+
+/* Estilizando a seção "Início" */
+
+#inicio {
+  background: rgb(1,29,92);
+  background: linear-gradient(90deg, rgba(1,29,92,1) 0%, rgba(9,66,156,1) 5%, rgba(9,65,154,1) 50%, rgba(0,25,84,1) 100%);
+  height: 100vh;
+  padding-top: 5%;
+}
+
+#inicio .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 3%;
+}
+
+#inicio .container img {
+  height: 30rem;
+  margin-left: 100px;
+}
+
+#inicio .texto {
+  margin-right: 10%;
+}
+
+h1 {
+  color: rgb(255, 253, 254);
+  font-size: 50px;
+  margin-bottom: 10px;
+  font-weight:bolder;
+  font-style: oblique;
+}
+
+span {
+  color: rgb(212, 0, 38);
+}
+
+#inicio h2 {
+  font-size: 25px;
+  text-decoration-color: rgb(212, 0, 38);
+}
+
+/* Estilizando a seção "Sobre" */
+
+#sobre {
+  background: url(./imagens/seção_sobre.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+#sobre .container {
+  padding: 90px;
+  width: 100%;
+}
+
+#sobre h2 {
+  text-transform: uppercase;
+  text-align: center;
+  padding-left: 38rem;
+  margin-bottom: 1rem;
+}
+
+#sobre .container .texto{
+  background-color: rgba(255, 253, 254, 0.85);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  padding: 15px;
+  width: 520px;
+  text-align: justify;
+  position: relative;
+  left:38rem;
+}
+
+#sobre p {
+  color:rgb(9, 66, 156);
+  font-size: 17px;
+}
+
+/* Estilizando a seção "Atualmente" */
+
+#atualmente {
+  background: url(./imagens/seção_atualmente.jpg);
+  background-size: cover;
+  height: 110vh;
+}
+
+#atualmente .container {
+  padding: 90px;
+  width: 100%;
+}
+
+#atualmente h2 {
+  text-transform: uppercase;
+  text-align: center;
+  padding-left: 38rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+
+#atualmente .container .texto{
+  background-color: rgba(255, 253, 254, 0.85);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  padding: 15px;
+  width: 520px;
+  text-align: justify;
+  position: relative;
+  left:38rem;
+}
+
+#atualmente p {
+  color:rgb(9, 66, 156);
+  font-size: 17px;
+}
+
+/* Estilizando a seção "Times" */
+
+#times {
+  background: url(./imagens/seção_conferências.jpg) repeat-y;
+  background-size: cover;
+  height: 170vh;
+}
+
+#times h2 {
+  text-transform: uppercase;
+  margin-left: 22.5%;
+  margin-top: 2em;
+}
+
+#times .tabelas {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 1rem;
+  width: 60%;
+}
+
+#times .tabelas .oeste {
+  background-color:rgb(212, 0, 38);
+  width:35%;
+}
+
+#times .tabelas .leste {
+  background-color: rgb(1,29,92);
+  width:35%;
+}
+
+#times .oeste_título,
+#times .leste_título {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#times .oeste_título img,
+#times .leste_título img {
+  height: 50px;
+  float: left;
+}
+
+#times h3 {
+  color: rgb(255, 253, 254);
+  padding-top: 1rem;
+  margin: 0;
+}
+
+#times li {
+  background-color: rgb(255, 253, 254);
+  list-style: none;
+  line-height: 13px;
+  margin: 5px 5px 0;
+  padding: 5px;
+  display: flex;
+}
+
+#times li img {
+  height: 18px;
+  margin-right: 15px;
+  margin-left: 5px;
+}
+
+#times li p {
+  align-self: center;
+  font-weight: 500;
+}
+
+.oeste img,
+.leste img {
+  height: 25px;
+  float: left;
+}
+
+.oeste ul li:hover {
+  cursor: pointer;
+  color: rgb(212, 0, 38);
+} 
+.leste ul li:hover {
+  cursor: pointer;
+  color: rgb(42, 103, 200);
+} 
+
+#times .texto{
+  background-color: rgba(255, 253, 254, 0.85);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  padding: 15px;
+  width: 45%;
+  text-align: justify;
+  position: relative;
+  left: 7em;
+  top: 1.5rem;
+}
+
+#times .texto p {
+  color:rgb(9, 66, 156);
+  font-size: 17px;
+}
+
+/* Estilizando a seção "Playoffs" */
+
+#playoffs {
+  background: url(./imagens/seção_playoffs.jpeg);
+  background-size: cover;
+  height: 130vh;
+}
+
+#playoffs .container{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  margin: 0.01rem 0 0 4rem;
+}
+
+#playoffs h2 {
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-top: 2.2em;
+  margin-bottom: 5px;
+}
+
+#playoffs img{
+  width: 70%;
+}
+
+#playoffs .texto{
+  background-color: rgba(255, 253, 254, 0.85);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  padding: 15px;
+  width: 105%;
+  text-align: justify;
+  position: relative;
+  top: 1rem;
+}
+
+#playoffs .texto p {
+  color:rgb(9, 66, 156);
+  font-size: 17px;
+}
+
+/* Estilizando a seção "Últimos Campeões" */
+
+#campeões {
+  background: url(./imagens/seção_campeões.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+#campeões .container{
+  height: 100vh;
+  display: flex;
+}
+
+#campeões .container img {
+  height: 50px;
+}
+
+#campeões h2 {
+  color: rgb(255, 253, 254);
+  text-decoration: underline;
+  margin-bottom: 30px;
+  margin-top: 1em;
+  text-align: center;
+}
+
+#campeões .tabela_campeões {
+  margin: 4rem 0 0 40rem;
+  height: 75%;
+  width: 40%;
+  flex-direction: column;
+  display: flex;
+}
+
+#campeões .time_campeão {
+  border: 1px solid rgb(9, 66, 156);
+  background-color: rgb(9, 66, 156);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#campeões h3 {
+  color: rgb(255, 253, 254);
+  align-self: center;
+}
+
+#campeões p {
+  color: rgb(212, 0, 38);
+  align-self: center;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/* Estilizando a seção "Contato" */
+
+#contato {
+  background: url(./imagens/seção_contato.jpg);
+  background-size: cover;
+  height: 92vh;
+}
+
+#contato h2 {
+  font-size: 25px;
+  color: rgb(255, 253, 254);
+  margin-left: 3.2em;
+  padding-top: 4em;
+}
+
+#contato .contato {
+  display: block;
+}
+
+.contact-methods {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2rem;
+}
+
+.contact-methods form {
+  margin: 2rem 0 0 3rem;
+}
+
+form input,
+form textarea,
+form button {
+  display: block;
+  width: 320px;
+  margin-bottom: 8px;
+  padding: 8px;
+}
+form textarea {
+  resize: none;
+  height: 180px;
+}
+section h3 {
+  margin-bottom: 16px;;
+}
+form button {
+  background-color:rgb(212, 0, 38) ;
+  color:#ecf0f1;
+  border:none;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: rgba(211, 0, 39, 0.851);
+}
+
+input:focus, textarea:focus {
+  outline-color: rgb(212, 0, 38);
+}
+
+/* Estilizando a seção "Footer" */
+
+footer {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+
+.footer-container p {
+  font-size: 13px;
+  text-align: center;
+}
+
+footer small {
+  font-size: 80%;
+  display: block;
+}
